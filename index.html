@@ -22,11 +22,19 @@
       <div class="nav__dropdown">
         <img src="images/logo.svg" alt="Snap Logo" />
         <ul class="nav__list">
-          <li class="nav__item nav__item--1">
+          <li class="nav__item nav__item--1" data-dropdown="features">
             <a href="#" class="nav__link">Features</a>
-            <img src="images/icon-arrow-down.svg" alt="Arrow Down" />
+            <img
+              src="images/icon-arrow-down.svg"
+              alt="Arrow Down"
+              class="arrow-features"
+              data-arrow="features"
+            />
 
-            <ul class="nav__dropdown__list nav__dropdown__list--1">
+            <ul
+              class="nav__dropdown__list nav__dropdown__list--1 hidden"
+              data-dropdown-list="features"
+            >
               <li class="nav__dropdown__list-item">
                 <img src="images/icon-todo.svg" alt="Todo" />
                 <a href="#" class="nav__link">To do List</a>
@@ -46,11 +54,19 @@
             </ul>
           </li>
 
-          <li class="nav__item nav__item--2">
+          <li class="nav__item nav__item--2" data-dropdown="company">
             <a href="#" class="nav__link">Company</a>
-            <img src="images/icon-arrow-down.svg" alt="Arrow down" />
+            <img
+              src="images/icon-arrow-down.svg"
+              alt="Arrow down"
+              class="arrow-company"
+              data-arrow="company"
+            />
 
-            <ul class="nav__dropdown__list nav__dropdown__list--2">
+            <ul
+              class="nav__dropdown__list nav__dropdown__list--2 hidden"
+              data-dropdown-list="company"
+            >
               <li class="nav__dropdown__list-item">
                 <a href="#" class="nav__link">History</a>
               </li>
