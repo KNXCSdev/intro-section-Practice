@@ -1,0 +1,139 @@
+:root {
+  --almostwhite: hsl(0, 0%, 98%);
+  --mediumgray: hsl(0, 0%, 41%);
+  --almostblack: hsl(0, 0%, 8%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-family: "Epilogue", sans-serif;
+  color: var(--mediumgray);
+  height: 100vh;
+  background-color: var(--almostwhite);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 9.6rem;
+}
+.nav__dropdown {
+  display: flex;
+  align-items: center;
+  gap: 5.6rem;
+}
+.nav__list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+.nav__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+}
+.nav__item:hover {
+  cursor: pointer;
+  color: var(--almostblack);
+  font-weight: 500;
+}
+.nav__login {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.nav__btn {
+  padding: 1rem 2rem;
+  background-color: var(--almostwhite);
+  border: 1.5px solid var(--mediumgray);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nav__btn-login {
+  border: none;
+}
+.nav__btn-login:hover {
+  color: var(--almostblack);
+  font-weight: 600;
+}
+.nav__btn-register:hover {
+  color: var(--almostblack);
+  font-weight: 600;
+  border: 1.5px solid var(--almostblack);
+}
+
+.primary-heading {
+  margin-top: 10rem;
+  font-size: 9rem;
+  color: var(--almostblack);
+}
+
+.section-hero {
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 150rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 15rem;
+  height: 80vh;
+}
+
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  flex-basis: 40%;
+}
+.hero__description {
+  width: 75%;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.hero__btn {
+  margin-right: auto;
+  height: 5rem;
+  width: 15rem;
+  background-color: var(--almostblack);
+  color: var(--almostwhite);
+  font-weight: 700;
+  border: 1px solid var(--almostblack);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.hero__btn:hover {
+  background-color: var(--almostwhite);
+  color: var(--almostblack);
+  font-weight: 800;
+}
+.hero__featured {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__img {
+  flex-basis: 50%;
+}
+.hero__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
