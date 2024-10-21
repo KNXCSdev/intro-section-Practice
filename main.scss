@@ -160,7 +160,7 @@ body {
   &__btn {
     margin-right: auto;
     display: inline-block;
-    height: 5rem;
+
     width: 15rem;
     background-color: var(--almostblack);
     color: var(--almostwhite);
@@ -168,6 +168,7 @@ body {
     border: 1px solid var(--almostblack);
     border-radius: 10px;
     cursor: pointer;
+    padding: 1rem;
 
     &:hover {
       background-color: var(--almostwhite);
@@ -192,9 +193,10 @@ body {
     }
   }
 }
-
-.hidden {
-  display: none;
+@media only screen and (min-width: 50em) {
+  .nav__mobile {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 50em) {
@@ -277,4 +279,93 @@ body {
       width: 8rem;
     }
   }
+}
+
+.nav__mobile {
+  position: relative;
+
+  &-btn {
+    border: none;
+    background-color: inherit;
+    z-index: 99;
+  }
+
+  &__expand {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 150vh;
+    background-color: var(--almostwhite);
+    padding: 3rem;
+  }
+
+  &__list {
+    margin-top: 7rem;
+    list-style: none;
+    font-size: 3rem;
+    color: var(--mediumgray);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
+  }
+
+  &__login {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__btn {
+    background-color: var(--almostwhite);
+    border-radius: 15px;
+    height: 7rem;
+    font-size: 3rem;
+    color: inherit;
+  }
+
+  &__dropdown__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 4rem;
+    width: 100%;
+    padding-top: 2rem;
+    font-size: 2.4rem;
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      img {
+        height: 2.4rem;
+        width: 2.4rem;
+      }
+    }
+  }
+}
+.hidden {
+  display: none;
+}
+
+.black {
+  top: 0;
+  position: absolute;
+  height: 150vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.726);
 }

@@ -143,7 +143,6 @@ body {
 .hero__btn {
   margin-right: auto;
   display: inline-block;
-  height: 5rem;
   width: 15rem;
   background-color: var(--almostblack);
   color: var(--almostwhite);
@@ -151,6 +150,7 @@ body {
   border: 1px solid var(--almostblack);
   border-radius: 10px;
   cursor: pointer;
+  padding: 1rem;
 }
 .hero__btn:hover {
   background-color: var(--almostwhite);
@@ -172,10 +172,11 @@ body {
   object-fit: contain;
 }
 
-.hidden {
-  display: none;
+@media only screen and (min-width: 50em) {
+  .nav__mobile {
+    display: none;
+  }
 }
-
 @media only screen and (max-width: 50em) {
   html {
     font-size: 55%;
@@ -242,4 +243,87 @@ body {
   .hero__featured img {
     width: 8rem;
   }
+}
+.nav__mobile {
+  position: relative;
+}
+.nav__mobile-btn {
+  border: none;
+  background-color: inherit;
+  z-index: 99;
+}
+.nav__mobile__expand {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  width: 70%;
+  height: 150vh;
+  background-color: var(--almostwhite);
+  padding: 3rem;
+}
+.nav__mobile__list {
+  margin-top: 7rem;
+  list-style: none;
+  font-size: 3rem;
+  color: var(--mediumgray);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.nav__mobile__item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+.nav__mobile__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+}
+.nav__mobile__login {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.nav__mobile__btn {
+  background-color: var(--almostwhite);
+  border-radius: 15px;
+  height: 7rem;
+  font-size: 3rem;
+  color: inherit;
+}
+.nav__mobile__dropdown__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-left: 4rem;
+  width: 100%;
+  padding-top: 2rem;
+  font-size: 2.4rem;
+}
+.nav__mobile__dropdown__list-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav__mobile__dropdown__list-item img {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.black {
+  top: 0;
+  position: absolute;
+  height: 150vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.726);
 }
