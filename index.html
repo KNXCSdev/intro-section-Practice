@@ -18,7 +18,7 @@
     <script defer src="main.js"></script>
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav nav__desktop">
       <div class="nav__dropdown">
         <img src="images/logo.svg" alt="Snap Logo" />
         <ul class="nav__list">
@@ -89,6 +89,10 @@
         <button class="nav__btn nav__btn-register">Register</button>
       </div>
     </nav>
+    <nav class="nav nav__mobile">
+      <img src="images/logo.svg" alt="Snap Logo" />
+      <img src="images/icon-menu.svg" alt="" />
+    </nav>
     <section class="section-hero hero">
       <div class="container">
         <div class="hero__info">
@@ -108,7 +112,10 @@
         </div>
 
         <div class="hero__img">
-          <img src="images/image-hero-desktop.png" alt="Hero IMG" />
+          <picture>
+            <source media="(max-width: 40em)" srcset="images/image-hero-mobile.png" />
+            <img src="images/image-hero-desktop.png" alt="a cute kitten" />
+          </picture>
         </div>
       </div>
     </section>
