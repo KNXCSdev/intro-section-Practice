@@ -243,3 +243,65 @@ body {
     width: 8rem;
   }
 }
+.nav__mobile {
+  position: relative;
+}
+.nav__mobile-btn {
+  border: none;
+  background-color: inherit;
+  z-index: 99;
+}
+.nav__mobile__menu-Close {
+  display: none;
+}
+.nav__mobile__expand {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: var(--almostwhite);
+  padding: 3rem;
+}
+.nav__mobile__list {
+  margin-top: 7rem;
+  list-style: none;
+  font-size: 3rem;
+  color: var(--mediumgray);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.nav__mobile__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav__mobile__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+}
+.nav__mobile__login {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.nav__mobile__btn {
+  background-color: var(--almostwhite);
+  border-radius: 15px;
+  height: 7rem;
+  font-size: 3rem;
+  color: inherit;
+}
+
+.black {
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.623);
+}

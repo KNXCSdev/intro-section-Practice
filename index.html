@@ -91,7 +91,78 @@
     </nav>
     <nav class="nav nav__mobile">
       <img src="images/logo.svg" alt="Snap Logo" />
-      <img src="images/icon-menu.svg" alt="" />
+      <button class="nav__mobile-btn">
+        <img src="images/icon-menu.svg" alt="" class="nav__mobile__menu-Open" />
+        <img src="images/icon-close-menu.svg" alt="" class="nav__mobile__menu-Close" />
+      </button>
+
+      <div class="nav__mobile__expand">
+        <ul class="nav__mobile__list">
+          <li class="nav__mobile__item nav__item--1" data-dropdown="features">
+            <a href="#" class="nav__mobile__link">Features</a>
+            <img
+              src="images/icon-arrow-down.svg"
+              alt="Arrow Down"
+              class="arrow-features"
+              data-arrow="features"
+            />
+
+            <ul
+              class="nav__mobile__dropdown__list nav__dropdown__list--1 hidden"
+              data-dropdown-list="features"
+            >
+              <li class="nav__mobile__dropdown__list-item">
+                <img src="images/icon-todo.svg" alt="Todo" />
+                <a href="#" class="nav__mobile__link">To do List</a>
+              </li>
+              <li class="nav__mobile__dropdown__list-item">
+                <img src="images/icon-calendar.svg" alt="Callendar" />
+                <a href="#" class="nav__mobile__link">Callendar</a>
+              </li>
+              <li class="nav__mobile__dropdown__list-item">
+                <img src="images/icon-reminders.svg" alt="Reminders" />
+                <a href="#" class="nav__mobile__link">Reminders</a>
+              </li>
+              <li class="nav__mobile__dropdown__list-item">
+                <img src="images/icon-planning.svg" alt="planning" />
+                <a href="#" class="nav__mobile__link">Planning</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__mobile__item nav__item--2" data-dropdown="company">
+            <a href="#" class="nav__mobile__link">Company</a>
+            <img
+              src="images/icon-arrow-down.svg"
+              alt="Arrow down"
+              class="arrow-company"
+              data-arrow="company"
+            />
+
+            <ul
+              class="nav__mobile__dropdown__list nav__dropdown__list--2 hidden"
+              data-dropdown-list="company"
+            >
+              <li class="nav__mobile__dropdown__list-item">
+                <a href="#" class="nav__mobile__link">History</a>
+              </li>
+              <li class="nav__mobile__dropdown__list-item">
+                <a href="#" class="nav__mobile__link">Our Team</a>
+              </li>
+              <li class="nav__mobile__dropdown__list-item">
+                <a href="#" class="nav__mobile__link">Blog</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__mobile__item"><a href="#" class="nav__mobile__link">Careers</a></li>
+          <li class="nav__mobile__item"><a href="#" class="nav__mobile__link">About</a></li>
+        </ul>
+        <div class="nav__mobile__login">
+          <button class="nav__mobile__btn nav__btn-login">Login</button>
+          <button class="nav__mobile__btn nav__btn-register">Register</button>
+        </div>
+      </div>
     </nav>
     <section class="section-hero hero">
       <div class="container">
@@ -119,5 +190,6 @@
         </div>
       </div>
     </section>
+    <div class="black"></div>
   </body>
 </html>
